@@ -6,19 +6,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="script/carousel.js"></script>
     <title>Manda Trends Test</title>
   </head>
   <body>
     <div class="container">
       <!-- Cabeçalho -->
       <header>
-        <img class="bg-header" src="assets/img/header/bg-header.png" alt="">
         <div class="woman"></div>
         <div class="text-side">
-          <p>NRF2020, <br> 
+          <p>NRF2020, <br>
             Kobe Bryant e <br>
-            WhatsApp Payment <br> <br>
-            edição 06 </p>
+            WhatsApp Payment <br> <br> </p>
+            <p class="edition"> edição 06</p>
         </div>
         <div class="sprite w100p">
           <div class="relative">
@@ -35,41 +35,62 @@
       <!-- Conteudo principal -->
     <main>
       <div class="notice-main">
-          <div>
-          <img class="image-main" src="assets/img/body/nfr.png" 
-          alt="Imagem com 3 mulheres sentadas em um palco palestrando"/>
+            <div class="image-main">
+          <img src="assets/img/body/nfr.png" class="nfr-img">
+          <img src="assets/img/body/main1.jpg" class="smartphone-img">
+          <img src="assets/img/body/main2.jpg" class="smartphone-img">
+           </div>
+        <button id="prevBtn1">Anterior</button>
+        <button id="nextBtn1">Próximo</button>
         <h3 class="title-main">NRF 2020: conheça os top 5 assuntos do evento.</h3>
         <p class="text-main">
           O maior evento sobre varejo do mundo mostrando as tendencias,
-          oportunidades e inovações para o setor
+          oportunidades e <br>
+          inovações para o setor.
         </p>
         <p class="font">Fonte: CMO ADOBE</p>
         <div class="line-main"></div>
        </div>
-      </div>
+
+       <!-- Sub noticias  -->
       <div class="notices">
       <!-- Sessao NBA -->
       <div class="nba">
-        <div>
-          <img src="assets/img/body/nba.png"
-            alt="Imagem da logo da NBA com o Kobe Bryant"/>
-        <h3>Petição para colocar Jobe Bryant no logo da NBA.</h3>
+        <div class="nba-Image">
+        <img src="assets/img/body/nba.png" alt="Imagem da logo da NBA com o Kobe Bryant"/>
+        <!-- <img src="assets/img/body/nba1.png" >
+        <img src="assets/img/body/nba2.png" >
+        <img src="assets/img/body/nba3.png" > -->
+      </div>
+            <button id="prevBtn2">Anterior</button>
+            <button id="nextBtn2">Próximo</button>
+        <h3>Petição para colocar Jobe <br>
+           Bryant no logo da NBA.</h3>
         <p>Fonte: Daily Mail</p>
         <div class="line-nba"></div>
-        </div>
       </div>
       <!-- Sessao Whatsapp -->
       <div class="whatsapp">
-        <div class="whatsapp center">
-          <img src="assets/img/body/whatsapp.png"
-            alt="Imagem da logo do whatsapp com o fundo verde"/>
-        <h3>Whatsapp terá função de pagamentos em 2020.</h3>
+          <div class="whatsapp-image">
+          <img src="assets/img/body/whatsapp.png" alt="Imagem da logo do whatsapp com o fundo verde"/>
+          <!-- <img src="assets/img/body/whatsapp2.png" alt="">
+          <img src="assets/img/body/whatsapp3.png">
+          <img src="assets/img/body/wpp4.png">
+          <img src="assets/img/body/wpp5.png">
+          <img src="assets/img/body/wpp6.png">
+          <img src="assets/img/body/wpp7.png">
+          <img src="assets/img/body/wpp8.png"> -->
+          </div>
+          <button id="prevBtn3">Anterior</button>
+          <button id="nextBtn3">Próximo</button>
+        <h3>Whatsapp terá função de <br>
+           pagamentos em 2020.</h3>
         <p>Fonte: Proxxima</p>
         <div class="line-whatsapp"></div>
-        </div>
       </div>
     </div>
      </main>
+
      <!-- Rodapé -->
       <footer>
           <img class="logo-footer"

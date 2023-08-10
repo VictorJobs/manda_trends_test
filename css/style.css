@@ -1,272 +1,243 @@
 body {
-       width: 100vw;
-       height: 100vh;
-       background: #f1f1f1;
-       justify-content: center; 
-       align-items: center; 
-   }
-   
-  .container {
-       max-width: 1350px;
-       width: 100%;
-       background: #fff;
-       padding: 2%;
-       margin: 0 2%;
-   } 
+    background: #f1f1f1;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.container {
+    max-width: 1350px;
+    width: 100%;
+    background: #fff;
+    margin: -1% 5%;
+    height: 1986px;
+    position: absolute;
+    border-radius: 2px;
+} 
 
 header{
-       background-image: linear-gradient(to right, #e9492a, #e72357);
-       height: 250px;
-       position: relative;
-       display: flex;
-   }
-   header .text-side{
-       font-size: 22px;
-       font-family: "Arial";
-       color: #ffff;
-       position: absolute;
-       line-height: 1.143;
-       margin-top: 45px;
-       margin-left: 65%;
-       margin-bottom: 10px;
-       text-align: right;
-       width: 400px;
-       height: 130px;
-       z-index: 19;
-   }
-   header .text-side{
-       position: absolute;
-       margin-bottom: 15px;
-   }
-   header .text-side{
-       margin-top: 50px;
-       margin-right: 28%;
-   }
-   
-   header .woman{
-       position: absolute;
-       margin-left: 50%;
-       margin-top: 118px;
-       width: 200px;
-   }
-   header .logo-manda{
-       position: absolute;
-       margin-left: 5%;
-       margin-top: 60px;
-       width: 300px;
-   }
-   header .circle{
-       position: absolute;
-       margin-top: 90px;
-       width: 150px;
-   }
-   header .rigth-arrows{
-       position: absolute;
-       margin-left: 45%;
-       margin-top: 50px;
-       width: 80px;
-   }
-   header .balls{
-       position: absolute;
-       margin-left: 30%;
-       margin-top: 220px;
-       width: 60px;
-   }
-   header .triangle{
-       position: absolute;
-       margin-left: 95%;
-       margin-top: 12px;
-       width: 36px;
-   }
-   header .zigzag{
-       position: absolute;
-       margin-left: 87%;
-       margin-top: 213px;
-       width: 125px;
-   }
-   
-     /* Noticia principal */
+    background-image: linear-gradient(to right, #e9492a, #e72357);
+    height: 250px;
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+}
+header .text-side{
+    font-size: 28px;
+    font-family: "Arial";
+    color: #ffff;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 65%;
+    margin-right: 28%;
+    margin-bottom: 15px;
+    text-align: right;
+    width: 400px;
+    position: absolute;
+}
+header .edition{
+    font-size: 15px;
+    margin-top: -40px;
+}
 
-     header{
-       background-image: linear-gradient(to right, #e9492a, #e72357);
-       height: 250px;
-       position: relative;
-       display: flex;
-   }
-   header .textoLateral{
-       color: #ffff;
-       position: absolute;
-       margin-top: 45px;
-       margin-left: 78%;
-       margin-bottom: 10px;
-       text-align: right;
-       width: 400px;
-       height: 150px;    
-   }
-   header .textoLateral h1{
-       position: absolute;
-       margin-bottom: 15px;
-   }
-   header .textoLateral {
-       margin-top: 137px;
-       margin-right: 28%;
-   }
-   header .logotipoMulher{
-       position: absolute;
-       margin-left: 50%;
-       margin-top: 131px;
-       width: 180px;
-   }
-   header .logotipoMandaTrends{
-       position: absolute;
-       margin-left: 5%;
-       margin-top: 60px;
-       width: 250px;
-   }
-   header .vetorCircular{
-       position: absolute;
-       margin-top: 60px;
-       width: 155px;
-   }
-   header .vetorSetas{
-       position: absolute;
-       margin-left: 50%;
-       margin-top: 70px;
-       width: 60px;
-   }
-   header .vetorQuadrado{
-       position: absolute;
-       margin-left: 40%;
-       margin-top: 220px;
-       width: 45px;
-   }
-   header .vetorTriangulo{
-       position: absolute;
-       margin-left: 95%;
-       margin-top: 12px;
-       width: 36px;
-   }
-   header .vetorOndulado{
-       position: absolute;
-       margin-left: 87%;
-       margin-top: 213px;
-       width: 125px;
-   }
-   
-   /*Main news*/
+header .woman{
+    position: absolute;
+    margin-left: 48%;
+    margin-top: 72px;
+    width: 270px;
+}
+header .logo-manda{
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 60px;
+    width: 350px;
+}
+header .circle{
+    position: absolute;
+    margin-top: 45px;
+    width: 175px;
+}
+header .rigth-arrows{
+    position: absolute;
+    margin-left: 48%;
+    margin-top: 25px;
+    width: 90px;
+}
+header .balls{
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 191px;
+    width: 85px;
+}
+header .triangle{
+    position: absolute;
+    margin-left: 94%;
+    margin-top: 10px;
+    width: 48px;
+}
+header .zigzag{
+    position: absolute;
+    margin-left: 85%;
+    margin-top: 220px;
+    width: 125px;
+}
 
-   main .notice-main{
-       position: relative;
-       width: 100%;
-       margin: auto;
-       margin-top: 50px;
-       z-index: 1000;
-       text-decoration: none;
-   }
-   main .notice-main .image-main{
-       width: 90%;
-       display: block;
-       margin: auto;
-   }
-   main .notice-main h3{
-       font-family: 'Arial', bold;
-       margin-top: 10px;
-       font-size: 35px;
-       color: #000000;
-       transition: 0.1s;
-   }
-   main .notice-main h3:hover{
-       color: #e72357;
-   }
-   main p{
-       font-size: 1.1em;
-       color: #74787a;
-       text-align: justify;
-       font-family: 'Arial';
-       text-decoration: none;
-   }
+/*Main news*/
+
+main .notice-main{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    text-decoration: none;
+}
+
+main .notice-main .image-main{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+main .notice-main .image-main img {
+    width: 100%; /* Define a largura da imagem como 100% do contêiner */
+    max-width: 1200px; /* Define o tamanho máximo da imagem */
+    height: auto; /* Mantém a proporção de aspecto da imagem */
+    border-radius: 5px;
+}
+
+main .notice-main h3{
+    font-family: 'Arial', bold;
+    margin-top: 10px;
+    font-size: 50px;
+    color: #000000;
+    transition: 0.1s;
+    margin-left: 70px; 
+
+}
+main .notice-main h3:hover{
+    color: #e72357;
+    cursor: pointer;
+}
+main p{
+    font-size: 29px;
+    color: #74787a;
+    text-align: justify;
+    font-family: 'Arial';
+    text-decoration: none;
+    margin-left: 70px; 
+    justify-content: center;
+    margin-top: -45px;
+}
+
+main .font {
+    font-style: italic;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 70px; 
+    margin-top: 10px;
+
+}
+main .line-main{
+    margin-top: 5px;
+    height: 6px;
+    width: 30%;
+    background-image: linear-gradient(to right, #e62259, #6b5ba3);
+    border-radius: 3px;
+    margin-left: 70px; 
+    
+}
+
+/* NBA and Whatsapp*/
+
+main .notices{
+    max-width: 100%;
+    min-width: 100%;
+    margin-top: 40px;
+    padding-top: 40px;
+    margin-left: 70px;
+    display: flex;
+}
+main .notices .nba .whatsapp{
+    width: 100%;
+    margin: auto;
+}
+
+ main .notices .nba img{
+    width: 575px;
+    border-radius: 5px;
+}
+
+main .notices .whatsapp img{
+    width: 598px;
+    border-radius: 5px;
+} 
+.whatsapp {
+    margin-left: 20px;
+}
+
+main .notices h3{
+    font-family: 'Arial', bold;
+    font-size: 38px;
+    padding-top: 0;
+    color: #000000;
+    transition: 0.1s;
+}
+main .notices .nba h3:hover{
+    color: #17408B;
+    cursor: pointer;
+}
+main .notices .whatsapp h3:hover{
+    color: #009900;
+    cursor: pointer;
+}
+main .notices p{
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 2px;
+    align-items: baseline;
+}
+
+ main .notices .nba .line-nba{
+    width: 55%;
+    height: 6px;
+    background-image: linear-gradient(to right, #76c6cf, #675ea5);
+     border-radius: 3px;
+}
+main .notices .whatsapp .line-whatsapp{
+    width: 55%;
+    height: 6px;
+    background-image: linear-gradient(to right, #75c7ce, #3ab38a);
+     border-radius: 3px;
+} 
+
+/* Footer */
+
+
  
-   .font {
-       font-family: 'Arial';
-       font-style: italic;
-       font-size: 15px;
-       text-decoration: none;
-   }
-   main .line-main{
-       margin-top: 10px;
-       height: 6px;
-       width: 30%;
-       background-image: linear-gradient(to right, #e62259, #6b5ba3);
-       border-radius: 3px;
-   }
-   
-   /* NBA and Whatsapp*/
-
-   main .notices{
-       max-width: 100%;
-       min-width: 100%;
-       margin-top: 30px;
-       padding-top: 40px;
-       margin: auto;
-       display: flex;
-       justify-content: space-between;
-   }
-   main .notices .nba .whatsapp{
-       width: 80%;
-       margin: auto;
-   }
-   main .notices .nba img{
-       width: 328px;
-   }
-   main .notices .whatsapp img{
-       width: 340px;
-   }
-   main .notices h3{
-       font-family: arial;
-       padding-top: 10px;
-       color: #000000;
-       transition: 0.1s;
-   }
-   main .notices .nba h3:hover{
-       color: rgba(67, 67, 255, 0.986);
-   }
-   main .notices .whatsapp h3:hover{
-       color: #009900;
-   }
-   main .notices p{
-       font-style: italic;
-       margin-top: 10px;
-   }
-   main .notices .nba .line-nba{
-       width: 55%;
-       background-image: linear-gradient(to right, #76c6cf, #675ea5);
-   }
-   main .notices .whatsapp .line-whatsapp{
-       width: 55%;
-       background-image: linear-gradient(to right, #75c7ce, #3ab38a);
-   }
-
-   /* Footer */
-   
-   footer{
-       margin-top: 40px;
-       width: 100%;
-   }
-   footer {
-       text-align: center;
-       height: 100px;
-       background-color: #fc4c02;
-   }
-   footer .logo-footer{
-       width: 270px;
-       margin-top: 25px;
-   }
+footer {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    height: 150px;
+    background-color: #fc4c02;
+    border-radius: 5px;
+}
+footer .logo-footer{
+    width: 500px;
+    height: auto;
+    margin-top: 30px;
+}
 
 .text-footer {
-       font-size: 20px;
-       text-align: center;
-       font-family: "Arial";
-       color: #646869;
-       margin-top: 3%;
-       font-weight: 500;
-     }
+    font-size: 20px;
+    text-align: center;
+    font-family: "Arial";
+    color: #646869;
+    margin-top: 3%;
+    font-weight: 500;
+  }
