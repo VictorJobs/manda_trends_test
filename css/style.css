@@ -1,243 +1,314 @@
 body {
-    background: #f1f1f1;
-    justify-content: center; 
-    align-items: center; 
+  display: flex;
+  background: #f1f1f1;
+  justify-content: center;
 }
 
 .container {
-    max-width: 1350px;
-    width: 100%;
-    background: #fff;
-    margin: -1% 5%;
-    height: 1986px;
-    position: absolute;
-    border-radius: 2px;
+  max-width: 1000px;
+  width: 100%;
+  background: #fff;
+  margin: -1% 5%;
+  height: 1730px;
+  position: absolute;
+  border-radius: 2px;
 } 
 
 header{
-    background-image: linear-gradient(to right, #e9492a, #e72357);
-    height: 250px;
-    position: relative;
-    margin-top: 40px;
-    display: flex;
-    width: 100%;
-    border-radius: 5px;
+  background-image: linear-gradient(to right, #e9492a, #e72357);
+  height: 250px;
+  position: relative;
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+  border-radius: 5px;
 }
 header .text-side{
-    font-size: 28px;
-    font-family: "Arial";
-    color: #ffff;
-    position: absolute;
-    margin-top: 30px;
-    margin-left: 65%;
-    margin-right: 28%;
-    margin-bottom: 15px;
-    text-align: right;
-    width: 400px;
-    position: absolute;
+  font-size: 23px;
+  font-family: "Arial";
+  color: #ffff;
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 53%;
+  margin-right: 28%;
+  margin-bottom: 15px;
+  text-align: right;
+  width: 400px;
 }
 header .edition{
-    font-size: 15px;
-    margin-top: -40px;
+  font-size: 15px;
+  margin-top: -30px;
 }
 
 header .woman{
-    position: absolute;
-    margin-left: 48%;
-    margin-top: 72px;
-    width: 270px;
+  position: absolute;
+  margin-left: 48%;
+  margin-top: 105px;
+  width: 200px;
+  height: 250px;
 }
 header .logo-manda{
-    position: absolute;
-    margin-left: 5%;
-    margin-top: 60px;
-    width: 350px;
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 60px;
+  width: 300px;
 }
 header .circle{
-    position: absolute;
-    margin-top: 45px;
-    width: 175px;
+  position: absolute;
+  margin-top: 45px;
+  margin-left: -55px;
+  width: 190px;
 }
 header .rigth-arrows{
-    position: absolute;
-    margin-left: 48%;
-    margin-top: 25px;
-    width: 90px;
+  position: absolute;
+  margin-left: 47%;
+  margin-top: 35px;
+  width: 80px;
 }
 header .balls{
-    position: absolute;
-    margin-left: 35%;
-    margin-top: 191px;
-    width: 85px;
+  position: absolute;
+  margin-left: 35%;
+  margin-top: 208px;
+  width: 60px;
 }
 header .triangle{
-    position: absolute;
-    margin-left: 94%;
-    margin-top: 10px;
-    width: 48px;
+  position: absolute;
+  margin-left: 92%;
+  margin-top: 10px;
+  width: 40px;
 }
 header .zigzag{
-    position: absolute;
-    margin-left: 85%;
-    margin-top: 220px;
-    width: 125px;
+  position: absolute;
+  margin-left: 80%;
+  margin-top: 190px;
+  width: 125px;
 }
 
 /*Main news*/
 
 main .notice-main{
-    position: relative;
-    width: 100%;
-    margin: auto;
-    margin-top: 50px;
-    text-decoration: none;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  margin-top: 5px;
+  text-decoration: none;
 }
 
-main .notice-main .image-main{
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+main .notice-main .images{
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
 }
-main .notice-main .image-main img {
-    width: 100%; /* Define a largura da imagem como 100% do contêiner */
-    max-width: 1200px; /* Define o tamanho máximo da imagem */
-    height: auto; /* Mantém a proporção de aspecto da imagem */
-    border-radius: 5px;
-}
+main .notice-main .images img {
+  width: 100%;
+  max-width: 850px;
+  border-radius: 5px;
+} 
+
 
 main .notice-main h3{
-    font-family: 'Arial', bold;
-    margin-top: 10px;
-    font-size: 50px;
-    color: #000000;
-    transition: 0.1s;
-    margin-left: 70px; 
-
+  font-family: 'Arial', bold;
+  margin-top: 0px;
+  font-size: 35px;
+  color: #000000;
+  transition: 0.1s;
+  margin-top: -30px;
 }
 main .notice-main h3:hover{
-    color: #e72357;
-    cursor: pointer;
+  color: #e72357;
+  cursor: pointer;
 }
 main p{
-    font-size: 29px;
-    color: #74787a;
-    text-align: justify;
-    font-family: 'Arial';
-    text-decoration: none;
-    margin-left: 70px; 
-    justify-content: center;
-    margin-top: -45px;
+  font-size: 20px;
+  color: #74787a;
+  text-align: justify;
+  font-family: 'Arial';
+  text-decoration: none;
+
+  justify-content: center;
+  margin-top: -30px;
 }
 
 main .font {
-    font-style: italic;
-    font-size: 20px;
-    text-decoration: none;
-    margin-left: 70px; 
-    margin-top: 10px;
+  font-style: italic;
+  font-size: 18px;
+  text-decoration: none;
+
+  margin-top: 10px;
 
 }
 main .line-main{
-    margin-top: 5px;
-    height: 6px;
-    width: 30%;
-    background-image: linear-gradient(to right, #e62259, #6b5ba3);
-    border-radius: 3px;
-    margin-left: 70px; 
-    
+  margin-top: 5px;
+  height: 6px;
+  width: 40%;
+  background-image: linear-gradient(to right, #e62259, #6b5ba3);
+  border-radius: 3px;
+
 }
 
 /* NBA and Whatsapp*/
 
+/* 16-08 */
 main .notices{
-    max-width: 100%;
-    min-width: 100%;
-    margin-top: 40px;
-    padding-top: 40px;
-    margin-left: 70px;
-    display: flex;
+  max-width: 100%;
+  min-width: 100%;
+  padding-top: 40px;
+  display: grid; 
+  grid-template-columns: repeat(2,1fr);
+}
+main .notices .whatsapp .images,
+main .notices .nba .images{
+height: 375px;
+}
+main{
+overflow: hidden;
+padding: 0px 50px 20px;
+}
+svg{
+padding: 1px;
+border-radius: 50%;
+background-color: rgba(231, 35 ,87 , 0.6);
+transition: all 0.3s ease-in-out;
+cursor: pointer;
+}
+svg:hover{
+background-color: rgba(231, 35 ,87 , 1);
+}
+.buttons{
+position: absolute;
+top:50%;
+transform: translateY(-50%);
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+.buttons a:nth-child(1){
+margin-left: -10px;
+}
+.buttons a:nth-child(2){
+margin-right: -10px;
+}
+.next {
+rotate:180deg;
+}
+/* 16-08 */
+.relative{
+position: relative;
 }
 main .notices .nba .whatsapp{
-    width: 100%;
-    margin: auto;
+  width: 100%;
+  margin: auto;
 }
 
- main .notices .nba img{
-    width: 575px;
-    border-radius: 5px;
+main .notices .nba img{
+  width: 380px;
+  border-radius: 5px;
 }
 
 main .notices .whatsapp img{
-    width: 598px;
-    border-radius: 5px;
+  width: 380px;
+  border-radius: 5px;
+  height: 325px;
 } 
 .whatsapp {
-    margin-left: 20px;
+  margin-left: 30px;
 }
 
 main .notices h3{
-    font-family: 'Arial', bold;
-    font-size: 38px;
-    padding-top: 0;
-    color: #000000;
-    transition: 0.1s;
+  font-family: 'Arial', bold;
+  font-size: 28px;
+  padding-top: 0;
+  color: #000000;
+  transition: 0.1s;
 }
 main .notices .nba h3:hover{
-    color: #17408B;
-    cursor: pointer;
+  color: #17408B;
+  cursor: pointer;
 }
 main .notices .whatsapp h3:hover{
-    color: #009900;
-    cursor: pointer;
+  color: #009900;
+  cursor: pointer;
 }
 main .notices p{
-    font-style: italic;
-    font-size: 20px;
-    margin-top: 10px;
-    margin-left: 2px;
-    align-items: baseline;
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 2px;
+  align-items: baseline;
 }
 
- main .notices .nba .line-nba{
-    width: 55%;
-    height: 6px;
-    background-image: linear-gradient(to right, #76c6cf, #675ea5);
-     border-radius: 3px;
+main .notices .nba .line-nba{
+  width: 62%;
+  height: 6px;
+  background-image: linear-gradient(to right, #76c6cf, #675ea5);
+   border-radius: 3px;
 }
 main .notices .whatsapp .line-whatsapp{
-    width: 55%;
-    height: 6px;
-    background-image: linear-gradient(to right, #75c7ce, #3ab38a);
-     border-radius: 3px;
+  width: 60%;
+  height: 6px;
+  background-image: linear-gradient(to right, #75c7ce, #3ab38a);
+   border-radius: 3px;
 } 
 
 /* Footer */
 
 
- 
+
 footer {
-    margin-top: 40px;
-    width: 100%;
-    text-align: center;
-    height: 150px;
-    background-color: #fc4c02;
-    border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  height: 150px;
+  background-color: #fc4c02;
+  border-radius: 5px;
 }
 footer .logo-footer{
-    width: 500px;
-    height: auto;
-    margin-top: 30px;
+  width: 500px;
+  height: auto;
+  margin-top: 30px;
 }
 
 .text-footer {
-    font-size: 20px;
-    text-align: center;
-    font-family: "Arial";
-    color: #646869;
-    margin-top: 3%;
-    font-weight: 500;
-  }
+  font-size: 20px;
+  text-align: center;
+  font-family: "Arial";
+  color: #646869;
+  margin-top: 3%;
+  font-weight: 500;
+}
+
+
+
+
+.images{
+  position: relative; 
+  height: 500px;
+  width: 100%; 
+  transition: transform 0.3s ease;
+  transform: translateX(0); 
+}
+.images img {
+  width: 100%;
+  position: absolute; 
+}
+button{
+  position: relative;
+  z-index: 99;
+}
+
+#principal img{
+  min-width: 1200px;
+}
+#principal{
+  overflow: hidden;
+  max-width: 1200px;
+  width: 100%; 
+
+}
+.carousel{
+  overflow: hidden;
+}

@@ -6,7 +6,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="script/carousel.js"></script>
     <title>Manda Trends Test</title>
   </head>
   <body>
@@ -20,8 +19,8 @@
             WhatsApp Payment <br> <br> </p>
             <p class="edition"> edição 06</p>
         </div>
-        <div class="sprite w100p">
-          <div class="relative">
+        <div>
+          <div>
             <img class="logo-manda" src="assets/img/header/logo-manda.png"></img>
             <img class="balls" src="assets/img/header/balls-copy.png"></img>
             <img class="rigth-arrows" src="assets/img/header/right-arrows.png"></img>
@@ -35,13 +34,25 @@
       <!-- Conteudo principal -->
     <main>
       <div class="notice-main">
-            <div class="image-main">
-          <img src="assets/img/body/nfr.png" class="nfr-img">
-          <img src="assets/img/body/main1.jpg" class="smartphone-img">
-          <img src="assets/img/body/main2.jpg" class="smartphone-img">
-           </div>
-        <button id="prevBtn1">Anterior</button>
-        <button id="nextBtn1">Próximo</button>
+        <div class="relative">
+          <div id="principal">
+              <div class="images">
+            <img src="assets/img/body/nfr.png" class="nfr-img">
+            <img src="assets/img/body/main1.jpg" class="smartphone-img">
+            <img src="assets/img/body/main2.jpg" class="smartphone-img">
+             </div>
+             
+        </div>
+        <div class="buttons">
+          <a onclick="handleButton('prev',this)" id="prevBtn1"><svg width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path d="M15 7L10 12L15 17" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+           </svg></a>
+       <a onclick="handleButton('next',this)" class="next"  id="nextBtn1"><svg width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path d="M15 7L10 12L15 17" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+         </svg></a>
+       </div>
+            </div>
+        
         <h3 class="title-main">NRF 2020: conheça os top 5 assuntos do evento.</h3>
         <p class="text-main">
           O maior evento sobre varejo do mundo mostrando as tendencias,
@@ -56,14 +67,17 @@
       <div class="notices">
       <!-- Sessao NBA -->
       <div class="nba">
-        <div class="nba-Image">
+        <div id="1" class="carousel">
+        <div class="images">
         <img src="assets/img/body/nba.png" alt="Imagem da logo da NBA com o Kobe Bryant"/>
-        <!-- <img src="assets/img/body/nba1.png" >
+        <img src="assets/img/body/nba1.png" >
         <img src="assets/img/body/nba2.png" >
-        <img src="assets/img/body/nba3.png" > -->
+        <img src="assets/img/body/nba3.png" >
       </div>
-            <button id="prevBtn2">Anterior</button>
-            <button id="nextBtn2">Próximo</button>
+      <button onclick="handleButton('prev',this)" id="prevBtn2">Anterior</button>
+      <button onclick="handleButton('next',this)" id="nextBtn2">Próximo</button>
+    </div>
+
         <h3>Petição para colocar Jobe <br>
            Bryant no logo da NBA.</h3>
         <p>Fonte: Daily Mail</p>
@@ -71,18 +85,20 @@
       </div>
       <!-- Sessao Whatsapp -->
       <div class="whatsapp">
-          <div class="whatsapp-image">
+        <div id="2" class="carousel">
+          <div class="images">
           <img src="assets/img/body/whatsapp.png" alt="Imagem da logo do whatsapp com o fundo verde"/>
-          <!-- <img src="assets/img/body/whatsapp2.png" alt="">
+          <img src="assets/img/body/whatsapp2.png" alt="">
           <img src="assets/img/body/whatsapp3.png">
           <img src="assets/img/body/wpp4.png">
           <img src="assets/img/body/wpp5.png">
           <img src="assets/img/body/wpp6.png">
           <img src="assets/img/body/wpp7.png">
-          <img src="assets/img/body/wpp8.png"> -->
+          <img src="assets/img/body/wpp8.png">
           </div>
-          <button id="prevBtn3">Anterior</button>
-          <button id="nextBtn3">Próximo</button>
+          <button onclick="handleButton('prev',this)" id="prevBtn2">Anterior</button>
+          <button onclick="handleButton('next',this)" id="nextBtn2">Próximo</button>
+          </div>
         <h3>Whatsapp terá função de <br>
            pagamentos em 2020.</h3>
         <p>Fonte: Proxxima</p>
@@ -102,5 +118,6 @@
         Caso não deseje mais receber nossos e-mails, por favor <a href="#">clique aqui.</a>
       </p>
     </div>
+    <script src="script/carousel.js"></script>
   </body>
 </html>
