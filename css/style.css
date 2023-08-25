@@ -9,7 +9,7 @@ body {
   width: 100%;
   background: #fff;
   margin: -1% 5%;
-  height: 1647px;
+  height: 1620px;
   position: absolute;
   border-radius: 2px;
 } 
@@ -84,8 +84,6 @@ header .zigzag{
   width: 125px;
 }
 
-/*Main news*/
-
 main .notice-main{
   position: relative;
   width: 100%;
@@ -109,8 +107,33 @@ main .notice-main .images img {
   max-width: 850px;
   border-radius: 5px;
 } 
-
-
+svg{
+  padding: 1px;
+  border-radius: 50%;
+  background-color: rgba(231, 35 ,87 , 0.6);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  }
+  svg:hover{
+  background-color: rgba(231, 35 ,87 , 1);
+  }
+  .buttons{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  }
+  .buttons a:nth-child(1){
+  margin-left: -10px;
+  }
+  .buttons a:nth-child(2){
+  margin-right: -10px;
+  }
+  .next {
+  rotate:180deg;
+  }
 main .notice-main h3{
   font-family: 'Arial', bold;
   margin-top: 0px;
@@ -151,9 +174,6 @@ main .line-main{
 
 }
 
-/* NBA and Whatsapp*/
-
-/* 16-08 */
 main .notices{
   max-width: 100%;
   min-width: 100%;
@@ -169,33 +189,7 @@ main{
 overflow: hidden;
 padding: 0px 50px 20px;
 }
-svg{
-padding: 1px;
-border-radius: 50%;
-background-color: rgba(231, 35 ,87 , 0.6);
-transition: all 0.3s ease-in-out;
-cursor: pointer;
-}
-svg:hover{
-background-color: rgba(231, 35 ,87 , 1);
-}
-.buttons{
-position: absolute;
-top:50%;
-transform: translateY(-50%);
-width: 100%;
-display: flex;
-justify-content: space-between;
-}
-.buttons a:nth-child(1){
-margin-left: -10px;
-}
-.buttons a:nth-child(2){
-margin-right: -10px;
-}
-.next {
-rotate:180deg;
-}
+
 
 .nba .buttons {
   position: absolute;
@@ -227,10 +221,10 @@ background-color: #0fce0f86;
   background-color: #25D366;
 }
 
-
 .relative{
 position: relative;
 }
+
 main .notices .nba .whatsapp{
   width: 100%;
   margin: auto;
@@ -289,9 +283,6 @@ main .notices .whatsapp .line-whatsapp{
    border-radius: 3px;
 } 
 
-/* Footer */
-
-
 
 footer {
   width: 100%;
@@ -314,9 +305,6 @@ footer .logo-footer{
   margin-top: 3%;
   font-weight: 500;
 }
-
-
-
 
 .images{
   position: relative; 
@@ -348,152 +336,6 @@ button{
 }
 
 
-@media (max-width: 500px) {
-  
-  .container {
-   max-width: 1000px;
-   width: 97%;
-   background: #fff;
-   margin: -3% 5%;
-   height: 1610px;
-   position: absolute;
-   border-radius: 2px;
-}
-header {
-   background-image: linear-gradient(to right, #e9492a, #e72357);
-   height: 250px;
-   position: relative;
-   margin-top: 30px;
-   display: flex;
-   width: 100%;
-   border-radius: 5px;
-}
-header .text-side {
-   font-size: 16px;
-   font-family: "Arial";
-   color: #ffff;
-   position: absolute;
-   margin-top: 60px;
-   margin-left: 54%;
-   margin-right: 23%;
-   margin-bottom: 20px;
-   text-align: right;
-   width: 155px;
-}
-header .text-side  p{
-line-height: 1.5;
-}
-header .edition {
- font-size: 10px;
- margin-top: -30px;
- line-height: 3;
-}
-header .logo-manda {
-   position: absolute;
-   margin-left: 6%;
-   margin-top: 78px;
-   width: 150px;
-}
-header .balls {
-   display: none;
-}
-header .rigth-arrows {
-   position: absolute;
-   margin-left: 6%;
-   margin-top: 28px;
-   width: 60px;
-}
-header  .woman {
-   position: absolute;
-   margin-left: 25%;
-   margin-top: 163px;
-   width: 150px;
-   height: 150px;
- }
-header .triangle {
-   position: absolute;
-   margin-left: 91%;
-   margin-top: 30px;
-   width: 30px;
-}
-header .zigzag {
-   position: absolute;
-   margin-left: 67%;
-   margin-top: 190px;
-   width: 110px;
-}
-header .circle {
-   display: none;
-}
-
-main {
-   overflow: hidden;
-   padding: 20px 10px 0px;
-}
-
-main .notice-main .images{
-  height: 220px;
-}
-main .notice-main h3{
-  margin-top: -15px;
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-}
-main p {
-  margin-top: -10px;
-  font-size: 15px;
-}
-main .notice-main .font {
-  font-size: 12px;
-}
-main .line-main {
-  width: 50%;
-}
-main .notices {
-  grid-template-columns: 1fr;
-}
-main .notices .nba .images {
-  height: 240px;
-}
-main .notices .nba img {
-  width: 340px;
-  height: 230px;
-}
-main .notices .whatsapp img {
-  width: 340px;
-  height: 250px;
-}
-main .notices .nba .line-nba {
-  width: 50%;
-}
-main .notices .whatsapp .line-whatsapp {
-  width: 50%;
-}
-main .whatsapp {
-  margin: 40px 0px;
-}
-main .whatsapp .relative {
-  height: 265px;
-}
-main .notices h3 {
-  font-size: 18px;
-  margin: auto;
-}
-main .notices p {
-  font-size: 12px;
-}
-
-footer .logo-footer {
-  width: 280px;
-  height: auto;
-  margin-top: 50px;
-}
-.text-footer {
-  font-size: 17px;
-  margin-top: 5%;
-}
-}
 
 @media (max-width: 900px) {
   .container {
@@ -554,7 +396,7 @@ header .woman {
 }
 main {
   overflow: hidden;
-  padding: 20px 10px 0px;
+  padding: 20px 20px 0px;
 }
 main .notice-main .images {
   height: 400px;
@@ -582,6 +424,7 @@ main .notices .nba .images {
 }
 main .notices .nba img {
   width: 275px;
+  height: 275px;
 }
 main .notices h3 {
   font-family: 'Arial', bold;
@@ -626,3 +469,300 @@ footer .logo-footer {
   margin-top: 2%;
 }
 }
+
+
+@media (max-width: 470px) {
+  
+  .container {
+    max-width: 1000px;
+    width: 97%;
+    background: #fff;
+    margin: -3% 5%;
+    height: 1590px;
+    position: absolute;
+    border-radius: 2px;
+ }
+ header {
+    background-image: linear-gradient(to right, #e9492a, #e72357);
+    height: 250px;
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+ }
+ header .text-side {
+    font-size: 16px;
+    font-family: "Arial";
+    color: #ffff;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 54%;
+    margin-right: 23%;
+    margin-bottom: 20px;
+    text-align: right;
+    width: 155px;
+ }
+  header .text-side  p{
+ line-height: 1.5;
+ } 
+ header .edition {
+  font-size: 10px;
+  margin-top: -30px;
+  line-height: 3;
+ }
+ header .logo-manda {
+    position: absolute;
+    margin-left: 6%;
+    margin-top: 78px;
+    width: 150px;
+ }
+ header .balls {
+    display: none;
+ }
+ header .rigth-arrows {
+    position: absolute;
+    margin-left: 6%;
+    margin-top: 28px;
+    width: 60px;
+ }
+ header  .woman {
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 163px;
+    width: 150px;
+    height: 150px;
+  }
+ header .triangle {
+    position: absolute;
+    margin-left: 91%;
+    margin-top: 30px;
+    width: 30px;
+ }
+ header .zigzag {
+    position: absolute;
+    margin-left: 67%;
+    margin-top: 190px;
+    width: 110px;
+ }
+ header .circle {
+    display: none;
+ }
+ 
+ main {
+    overflow: hidden;
+    padding: 20px 10px 0px;
+ }
+ 
+ main .notice-main .images{
+   height: 220px;
+ }
+ main .notice-main h3{
+   margin-top: -15px;
+   font-size: 20px;
+   display: flex;
+   justify-content: center;
+ }
+ main p {
+   margin-top: -10px;
+   font-size: 15px;
+ }
+ main .notice-main .font {
+   font-size: 12px;
+ }
+ main .line-main {
+   width: 50%;
+ }
+ main .notices {
+   grid-template-columns: 1fr;
+ }
+ main .notices .nba .images {
+   height: 240px;
+ }
+ main .notices .nba img {
+   width: 340px;
+   height: 230px;
+ }
+ main .notices .whatsapp img {
+   width: 340px;
+   height: 250px;
+ }
+ main .notices .nba .line-nba {
+   width: 50%;
+ }
+ main .notices .whatsapp .line-whatsapp {
+   width: 50%;
+ }
+ main .whatsapp {
+   margin: 40px 0px;
+ }
+ main .whatsapp .relative {
+   height: 265px;
+ }
+ main .notices h3 {
+   font-size: 18px;
+   margin: auto;
+ }
+ main .notices p {
+   font-size: 12px;
+ }
+ 
+ footer .logo-footer {
+   width: 280px;
+   height: auto;
+   margin-top: 50px;
+ }
+ .text-footer {
+   font-size: 17px;
+   margin-top: 5%;
+ }
+ }
+ 
+ @media (max-width: 376px) {
+  
+  .container {
+    max-width: 1000px;
+    width: 97%;
+    background: #fff;
+    margin: -3% 5%;
+    height: 1510px;
+    position: absolute;
+    border-radius: 2px;
+ }
+ header {
+    background-image: linear-gradient(to right, #e9492a, #e72357);
+    height: 230px;
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+ }
+ header .text-side {
+    font-size: 14px;
+    font-family: "Arial";
+    color: #ffff;
+    position: absolute;
+    margin-top: 65px;
+    margin-left: 48%;
+    margin-right: 23%;
+    margin-bottom: 20px;
+    text-align: right;
+    width: 155px;
+ }
+  header .text-side  p{
+ line-height: 1.5;
+ } 
+ header .edition {
+  font-size: 10px;
+  margin-top: -30px;
+  line-height: 3;
+ }
+ header .logo-manda {
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 78px;
+    width: 120px;
+ }
+ header .balls {
+    display: none;
+ }
+ header .rigth-arrows {
+    position: absolute;
+    margin-left: 6%;
+    margin-top: 28px;
+    width: 50px;
+ }
+ header  .woman {
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 155px;
+    width: 130px;
+    height: 130px;
+  }
+ header .triangle {
+    position: absolute;
+    margin-left: 91%;
+    margin-top: 30px;
+    width: 22px;
+ }
+ header .zigzag {
+    position: absolute;
+    margin-left: 69%;
+    margin-top: 180px;
+    width: 90px;
+ }
+ header .circle {
+    display: none;
+ }
+ 
+ main {
+    overflow: hidden;
+    padding: 5px 10px 0px;
+ }
+ 
+ main .notice-main .images{
+   height: 200px;
+ }
+ main .notice-main h3{
+   margin-top: -15px;
+   font-size: 20px;
+   display: flex;
+   justify-content: center;
+ }
+ main p {
+   margin-top: -10px;
+   font-size: 15px;
+ }
+ main .notice-main .font {
+   font-size: 12px;
+ }
+ main .line-main {
+   width: 50%;
+ }
+ main .notices {
+   grid-template-columns: 1fr;
+ }
+ main .notices .nba .images {
+   height: 240px;
+ }
+ main .notices .nba img {
+   width: 280px;
+   height: 230px;
+ }
+ main .notices .whatsapp img {
+   width: 300px;
+   height: 250px;
+ }
+ main .notices .nba .line-nba {
+   width: 50%;
+ }
+ main .notices .whatsapp .line-whatsapp {
+   width: 50%;
+ }
+ main .whatsapp {
+   margin: 40px 0px;
+ }
+ main .whatsapp .relative {
+   height: 265px;
+ }
+ main .notices h3 {
+   font-size: 18px;
+   margin: auto;
+ }
+ main .notices p {
+   font-size: 12px;
+ }
+ footer {
+  margin-top: 0px;
+ }
+ footer .logo-footer {
+   width: 250px;
+   height: auto;
+   margin-top: 40px;
+ }
+ .text-footer {
+   font-size: 15px;
+   margin-top: 5%;
+ }
+ }
